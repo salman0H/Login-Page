@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="icon" type="image/png" href="icon/icons8-customer-64.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dawning+of+a+New+Day&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap" rel="stylesheet">
+        <style>
+        body{
+            /* font-family: 'Dawning of a New Day', cursive; */
+        }
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: 0;
+        }
+        h1{
+            text-align: center;
+            position: sticky;
+            top: 4%;
+            font-size: 54px;
+            font-family: 'Dawning of a New Day', cursive;
+            color: aliceblue;
+        }
+        .back{
+            width: 100%;
+            height: 100%;
+            background: radial-gradient(circle at top left, #a84dac, #1b74da);
+            position: absolute;
+            margin-top: 60x;
+        }
+        .up{
+            width: 550px;
+            height: 550px;
+            background-color: aliceblue;
+            z-index: 2;
+            position: absolute;
+            transform: translate(-50%, -50%);
+            top: 50%;
+            left: 50%;
+            border-radius: 1.5%;
+        }
+        .circle{
+            width: 80px;
+            height: 80px;
+            background-color: rgb(219, 30, 62);
+            border-radius: 50%;
+            position: relative;
+            left: 50%;
+            transform: translate(-50%,-50%);
+        }
+        .child{
+            filter: invert();
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%,-50%) scale(2);
+        }
+        .down{
+            width: 350px;
+            height: 500px;
+            /* border:#1b74da solid 2px; */
+            position: absolute;
+            transform: translate(-50%, -50%);
+            top: 50%;
+            left: 50%;
+            /* overflow: hidden; */
+            font-family: 'Black Han Sans', sans-serif;
+        }
+        .header{
+            width: 100%;
+            height: 65%;
+            /* background-color: antiquewhite; */
+            position: sticky;
+            top: 0;
+        }
+        .information{
+            width: 100%;
+            height: 80%;
+            /* border:2px red solid ; */
+            transform: translate(-50%,-50%);
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            font-size: 14px;
+            margin-top: 30px;
+        }
+        .header input[type="text"],input[type="password"]
+        {
+            width: 93%;
+            height: 25px;
+            margin: 15px 0;
+            padding: 16px 15px;
+            display: inline;
+            border: 2px solid #aaaaaa;
+            position: relative;
+            font-size: 15px;
+            font-family: 'Black Han Sans', sans-serif;
+        }
+        .remember{
+            width: 100%;
+            height: 20px;
+            position: relative;
+            margin-top: 5px;
+            margin-bottom: 5px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        .remember input{
+            width: 15px;
+            height: 15px;
+            border-radius: 0%;
+            margin-right: 2px;
+            border: none;
+            border-radius: 0%;
+            
+        }
+        .remember label{
+            margin-top: 20px;
+            margin-bottom: 20px;
+            font-size: 14px;
+        }
+        .login{
+            width: 100%;
+            height: 40px;
+            position: relative;
+            margin-top: 5px;
+            margin-bottom: 10px;
+        }
+        .login button{
+            width: 100%;
+            height: 100%;
+            background-color: #ff2454; 
+            color: white; 
+            text-align: center; 
+            text-decoration: none; 
+            display: inline-block;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 0px; 
+            border: none; 
+            font-family: 'Black Han Sans', sans-serif;
+        }
+        .between{
+            widows: 100%;
+            height: 10%;
+            /* background-color: #fcf; */
+            position: relative;
+            padding: 60px;
+        }
+        hr{
+            opacity: 25%;
+        }
+        .social{
+            width: 75%;
+            height: 80%;
+            margin-top: 20px;
+            /* background-color: #aaaaaa; */
+            position: absolute;
+            transform: translate(-50%, -50%);
+            top: 50%;
+            left: 50%;
+        }
+        .social p{
+            text-align: center;
+            font-size: 14px;
+        }
+
+        .footer{
+            width: 100%;
+            height: 25%;
+            /* background-color: rgb(211, 133, 30); */
+            position: absolute;
+            bottom: 0;
+        }
+        .media{
+            width: 300px;
+            height: 50px;
+            /* background-color: #865963; */
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        .media button{
+            width: 49%;
+            height: 50px;
+            float: left;
+            position: relative;
+            background-color: #ff2454; 
+            color: white; 
+            text-align: center; 
+            text-decoration: none; 
+            display: inline-block;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 0px; 
+            border: none;
+            opacity: 70%;
+            font-family: 'Black Han Sans', sans-serif;
+            display: flex;
+            align-items: center;
+            
+        }
+        .firstbutt{
+            margin-right: 1px;
+        }
+        .secondbutt{
+            margin-left: 1px;
+        }
+        img{
+            width: 20px;
+            margin-left: 25px;
+            filter: invert();
+        }
+        </style>
+</head>
+<body>
+    <div class="back">
+        <h1>
+            hello
+        </h1>
+        <div class="up">
+            <div class="circle">
+                <span class="material-symbols-outlined child">
+                    person
+                </span>
+            </div>
+            <div class="down">
+                <div class="header">
+                    <div class="information">
+                        <form action="" class="upper">
+                            <input type="text" id="username" name="username" placeholder="username">
+                            <input type="password" id="pass"    name="password" placeholder="password">
+                            <div class="remember">
+                                <input type="checkbox" id="check"   name="remember">
+                                <label for="check">
+                                     Remamber password
+                                </label>
+                            </div>
+                            <div class="login">
+                                <button class="home">
+                                    LOGIN
+                                </button>
+                            </div>
+                        </form>
+                        <div class="link">
+                            <p class="sign">
+                                Not Rgistred?
+                                <a href="#home" class="sign in">
+                                    Sign Up
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="between">
+                    <div class="social">
+                        <hr class="upp">
+                            <p>
+                                Or login via social links
+                            </p>
+                        <hr class="downp">
+                    </div>
+                </div>
+                <div class="footer">
+                    <div class="media">
+                        <form action="" class="under">
+                            <button class="firstbutt"> 
+                                <img src="icon/icons8-facebook-50.png" alt="">
+                                <span>
+                                    Facebook
+                                </span>
+                            </button>
+                            <button class="secondbutt">
+                                <img src="icon/icons8-google-50.png" alt="">
+                                <span>
+                                    Google
+                                </span>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
